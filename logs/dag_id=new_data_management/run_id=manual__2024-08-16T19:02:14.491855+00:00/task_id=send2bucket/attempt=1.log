@@ -1,0 +1,21 @@
+[2024-08-16T19:02:41.108+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: new_data_management.send2bucket manual__2024-08-16T19:02:14.491855+00:00 [queued]>
+[2024-08-16T19:02:41.122+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: new_data_management.send2bucket manual__2024-08-16T19:02:14.491855+00:00 [queued]>
+[2024-08-16T19:02:41.123+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T19:02:41.159+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): send2bucket> on 2024-08-16 19:02:14.491855+00:00
+[2024-08-16T19:02:41.169+0000] {standard_task_runner.py:60} INFO - Started process 2581 to run task
+[2024-08-16T19:02:41.176+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'new_data_management', 'send2bucket', 'manual__2024-08-16T19:02:14.491855+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/new_data_management.py', '--cfg-path', '/tmp/tmpqdviad3q']
+[2024-08-16T19:02:41.180+0000] {standard_task_runner.py:88} INFO - Job 41: Subtask send2bucket
+[2024-08-16T19:02:41.204+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T19:02:41.258+0000] {task_command.py:423} INFO - Running <TaskInstance: new_data_management.send2bucket manual__2024-08-16T19:02:14.491855+00:00 [running]> on host f23221e116fc
+[2024-08-16T19:02:41.492+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='new_data_management' AIRFLOW_CTX_TASK_ID='send2bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T19:02:14.491855+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T19:02:14.491855+00:00'
+[2024-08-16T19:02:41.528+0000] {logging_mixin.py:188} INFO - retrain: True
+[2024-08-16T19:02:41.529+0000] {new_data_management.py:121} INFO - retrain value from task 4 : True
+[2024-08-16T19:02:41.529+0000] {new_data_management.py:123} INFO - sent to bucket my-karma-bucket
+[2024-08-16T19:02:41.564+0000] {base.py:83} INFO - Using connection ID 'aws_default' for task execution.
+[2024-08-16T19:02:41.565+0000] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-16T19:02:49.821+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-08-16T19:02:49.839+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=new_data_management, task_id=send2bucket, execution_date=20240816T190214, start_date=20240816T190241, end_date=20240816T190249
+[2024-08-16T19:02:49.915+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-16T19:02:49.943+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

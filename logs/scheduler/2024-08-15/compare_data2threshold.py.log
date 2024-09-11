@@ -1,0 +1,53 @@
+[2024-08-15T16:10:34.784+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T16:10:34.787+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T16:10:34.791+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:34.790+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T16:10:48.967+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T16:10:50.519+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.518+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:compare_data2threshold
+[2024-08-15T16:10:50.838+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.836+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:compare_data2threshold
+[2024-08-15T16:10:50.963+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.960+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:compare_data2threshold
+[2024-08-15T16:10:50.975+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.974+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T16:10:51.075+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:51.074+0000] {dag.py:3058} INFO - Creating ORM DAG for compare_data2threshold
+[2024-08-15T16:10:51.144+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:51.143+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T16:10:51.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 16.470 seconds
+[2024-08-15T17:05:33.829+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:05:33.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:05:33.847+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:33.846+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:05:40.356+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:05:42.355+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:42.354+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:05:42.640+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:42.639+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:05:42.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 8.968 seconds
+[2024-08-15T17:06:13.334+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:13.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:06:13.692+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:13.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:14.299+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:14.329+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:14.328+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:06:14.360+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:14.360+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:06:15.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 2.187 seconds
+[2024-08-15T17:06:49.469+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:49.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:06:49.474+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:49.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:50.471+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:06:50.564+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:50.563+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:06:50.632+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:50.631+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:06:50.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 1.458 seconds
+[2024-08-15T17:07:22.445+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:22.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:07:22.516+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:22.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:24.040+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:24.183+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:24.183+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:07:24.258+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:24.258+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:07:24.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 2.329 seconds
+[2024-08-15T17:07:55.084+0000] {processor.py:161} INFO - Started process (PID=437) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:55.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:07:55.106+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:55.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:56.322+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:07:56.350+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:56.349+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:07:56.407+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:56.406+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:07:56.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 1.516 seconds
+[2024-08-15T17:08:26.686+0000] {processor.py:161} INFO - Started process (PID=505) to work on /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:08:26.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/compare_data2threshold.py for tasks to queue
+[2024-08-15T17:08:26.748+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:26.748+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:08:27.629+0000] {processor.py:840} INFO - DAG(s) 'compare_data2threshold' retrieved from /opt/airflow/dags/compare_data2threshold.py
+[2024-08-15T17:08:27.671+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:27.671+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:08:27.727+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:27.726+0000] {dag.py:3823} INFO - Setting next_dagrun for compare_data2threshold to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-15T17:08:27.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/compare_data2threshold.py took 1.265 seconds

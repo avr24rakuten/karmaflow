@@ -1,0 +1,8 @@
+[
+    {
+        "datetime": "0",
+        "sent_to_retrain": true,
+        "train_finished": false,
+        "new_model_keep": true
+    }
+]

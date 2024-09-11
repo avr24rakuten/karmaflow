@@ -1,0 +1,53 @@
+[2024-08-15T16:10:34.816+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T16:10:34.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T16:10:34.823+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:34.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T16:10:48.966+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T16:10:50.582+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.581+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:create_new_data
+[2024-08-15T16:10:50.811+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.808+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:create_new_data
+[2024-08-15T16:10:50.978+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.978+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:create_new_data
+[2024-08-15T16:10:50.980+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:50.979+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T16:10:51.058+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:51.056+0000] {dag.py:3058} INFO - Creating ORM DAG for create_new_data
+[2024-08-15T16:10:51.059+0000] {logging_mixin.py:188} INFO - [2024-08-15T16:10:51.059+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T16:10:51.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 16.367 seconds
+[2024-08-15T17:05:33.834+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:05:33.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:05:33.844+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:33.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:05:40.400+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:05:41.917+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:41.916+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:05:41.957+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:05:41.956+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:05:42.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 8.235 seconds
+[2024-08-15T17:06:12.322+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:12.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:06:12.488+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:12.487+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:13.029+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:13.057+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:13.057+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:06:13.078+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:13.078+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:06:14.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 2.140 seconds
+[2024-08-15T17:06:49.480+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:49.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:06:49.485+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:49.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:50.491+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:06:50.546+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:50.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:06:50.587+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:06:50.586+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:06:50.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 1.291 seconds
+[2024-08-15T17:07:22.598+0000] {processor.py:161} INFO - Started process (PID=369) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:22.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:07:22.664+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:22.663+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:24.178+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:24.235+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:24.235+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:07:24.271+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:24.270+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:07:24.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 2.193 seconds
+[2024-08-15T17:07:55.114+0000] {processor.py:161} INFO - Started process (PID=438) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:55.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:07:55.264+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:55.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:56.323+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:07:56.351+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:56.350+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:07:56.374+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:07:56.374+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:07:56.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 1.459 seconds
+[2024-08-15T17:08:26.696+0000] {processor.py:161} INFO - Started process (PID=506) to work on /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:08:26.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_new_data.py for tasks to queue
+[2024-08-15T17:08:26.750+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:26.749+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:08:27.576+0000] {processor.py:840} INFO - DAG(s) 'create_new_data' retrieved from /opt/airflow/dags/create_new_data.py
+[2024-08-15T17:08:27.607+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:27.606+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-08-15T17:08:27.628+0000] {logging_mixin.py:188} INFO - [2024-08-15T17:08:27.628+0000] {dag.py:3823} INFO - Setting next_dagrun for create_new_data to None, run_after=None
+[2024-08-15T17:08:27.844+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_new_data.py took 1.153 seconds

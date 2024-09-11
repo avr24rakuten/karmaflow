@@ -1,0 +1,23 @@
+[2024-08-17T09:57:51.619+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_data_after_retrain.update_data_after_retrain manual__2024-08-17T09:57:29.951362+00:00 [queued]>
+[2024-08-17T09:57:51.848+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_data_after_retrain.update_data_after_retrain manual__2024-08-17T09:57:29.951362+00:00 [queued]>
+[2024-08-17T09:57:51.850+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-17T09:57:51.977+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): update_data_after_retrain> on 2024-08-17 09:57:29.951362+00:00
+[2024-08-17T09:57:52.046+0000] {standard_task_runner.py:60} INFO - Started process 31971 to run task
+[2024-08-17T09:57:52.052+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'update_data_after_retrain', 'update_data_after_retrain', 'manual__2024-08-17T09:57:29.951362+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/update_data_after_retrain.py', '--cfg-path', '/tmp/tmpnod3jkxb']
+[2024-08-17T09:57:52.086+0000] {standard_task_runner.py:88} INFO - Job 61: Subtask update_data_after_retrain
+[2024-08-17T09:57:52.379+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-17T09:57:52.932+0000] {task_command.py:423} INFO - Running <TaskInstance: update_data_after_retrain.update_data_after_retrain manual__2024-08-17T09:57:29.951362+00:00 [running]> on host f23221e116fc
+[2024-08-17T09:57:54.328+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_data_after_retrain' AIRFLOW_CTX_TASK_ID='update_data_after_retrain' AIRFLOW_CTX_EXECUTION_DATE='2024-08-17T09:57:29.951362+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-17T09:57:29.951362+00:00'
+[2024-08-17T09:57:54.370+0000] {s3.py:1375} INFO - This function shadows the 'download_file' method of S3 API, but it is not the same. If you want to use the original method from S3 API, please call 'S3Hook.get_conn().download_file()'
+[2024-08-17T09:57:54.372+0000] {s3.py:1381} INFO - Downloading source S3 file from Bucket my-karma-bucket with path train_model_metadata.json
+[2024-08-17T09:57:54.503+0000] {base.py:83} INFO - Using connection ID 'aws_default' for task execution.
+[2024-08-17T09:57:54.506+0000] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-17T09:57:58.628+0000] {update_data_after_retrain.py:47} INFO - L'entrainenement est terminé : False
+[2024-08-17T09:57:58.629+0000] {update_data_after_retrain.py:49} INFO - Garder le modèle réentrainé : True
+[2024-08-17T09:57:58.659+0000] {update_data_after_retrain.py:51} INFO - Data deja intégré dans le modèle : True
+[2024-08-17T09:57:58.660+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-08-17T09:57:58.812+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=update_data_after_retrain, task_id=update_data_after_retrain, execution_date=20240817T095729, start_date=20240817T095751, end_date=20240817T095758
+[2024-08-17T09:57:59.140+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-17T09:57:59.245+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,20 @@
+[2024-09-07T14:23:51.693+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: new_data_management.pull_new_data manual__2024-09-07T14:23:37.967877+00:00 [queued]>
+[2024-09-07T14:23:51.766+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: new_data_management.pull_new_data manual__2024-09-07T14:23:37.967877+00:00 [queued]>
+[2024-09-07T14:23:51.780+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-09-07T14:23:52.001+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): pull_new_data> on 2024-09-07 14:23:37.967877+00:00
+[2024-09-07T14:23:52.057+0000] {standard_task_runner.py:60} INFO - Started process 3251 to run task
+[2024-09-07T14:23:52.064+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'new_data_management', 'pull_new_data', 'manual__2024-09-07T14:23:37.967877+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/new_data_management.py', '--cfg-path', '/tmp/tmp8i8kv5e_']
+[2024-09-07T14:23:52.068+0000] {standard_task_runner.py:88} INFO - Job 101: Subtask pull_new_data
+[2024-09-07T14:23:52.222+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-09-07T14:23:52.802+0000] {task_command.py:423} INFO - Running <TaskInstance: new_data_management.pull_new_data manual__2024-09-07T14:23:37.967877+00:00 [running]> on host 74653e659746
+[2024-09-07T14:23:53.723+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='new_data_management' AIRFLOW_CTX_TASK_ID='pull_new_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-07T14:23:37.967877+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-07T14:23:37.967877+00:00'
+[2024-09-07T14:23:53.729+0000] {new_data_management.py:158} INFO - Pull new data from bucket my-karma-bucket
+[2024-09-07T14:23:53.735+0000] {new_data_management.py:166} INFO - sample_size : 198
+[2024-09-07T14:23:57.033+0000] {new_data_management.py:175} INFO - df_train_new shape : (1970, 5)
+[2024-09-07T14:23:57.035+0000] {new_data_management.py:176} INFO - df_stock shape : (33448, 5)
+[2024-09-07T14:24:02.882+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-09-07T14:24:03.174+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=new_data_management, task_id=pull_new_data, execution_date=20240907T142337, start_date=20240907T142351, end_date=20240907T142403
+[2024-09-07T14:24:03.492+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-07T14:24:03.795+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

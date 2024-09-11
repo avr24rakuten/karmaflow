@@ -1,0 +1,27 @@
+[2024-08-16T14:57:15.414+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_data_after_retrain.check_retrain_finished manual__2024-08-16T14:57:10.303319+00:00 [queued]>
+[2024-08-16T14:57:15.432+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_data_after_retrain.check_retrain_finished manual__2024-08-16T14:57:10.303319+00:00 [queued]>
+[2024-08-16T14:57:15.434+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T14:57:15.465+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_retrain_finished> on 2024-08-16 14:57:10.303319+00:00
+[2024-08-16T14:57:15.473+0000] {standard_task_runner.py:60} INFO - Started process 15155 to run task
+[2024-08-16T14:57:15.480+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'update_data_after_retrain', 'check_retrain_finished', 'manual__2024-08-16T14:57:10.303319+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/update_data_after_retrain.py', '--cfg-path', '/tmp/tmpc2lzbe3a']
+[2024-08-16T14:57:15.484+0000] {standard_task_runner.py:88} INFO - Job 22: Subtask check_retrain_finished
+[2024-08-16T14:57:15.515+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T14:57:15.578+0000] {task_command.py:423} INFO - Running <TaskInstance: update_data_after_retrain.check_retrain_finished manual__2024-08-16T14:57:10.303319+00:00 [running]> on host 282fa7a8e0f3
+[2024-08-16T14:57:15.766+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_data_after_retrain' AIRFLOW_CTX_TASK_ID='check_retrain_finished' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T14:57:10.303319+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T14:57:10.303319+00:00'
+[2024-08-16T14:57:15.770+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/update_data_after_retrain.py", line 81, in check_retrain_finished
+    train_finished = train_model_metadata_json[0]["train_finish"]
+KeyError: 'train_finish'
+[2024-08-16T14:57:15.812+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=update_data_after_retrain, task_id=check_retrain_finished, execution_date=20240816T145710, start_date=20240816T145715, end_date=20240816T145715
+[2024-08-16T14:57:15.849+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 22 for task check_retrain_finished ('train_finish'; 15155)
+[2024-08-16T14:57:15.896+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-16T14:57:15.941+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2024-08-16T18:48:38.548+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: new_data_management.send2bucket manual__2024-08-16T18:48:15.640733+00:00 [queued]>
+[2024-08-16T18:48:38.562+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: new_data_management.send2bucket manual__2024-08-16T18:48:15.640733+00:00 [queued]>
+[2024-08-16T18:48:38.562+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T18:48:38.584+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): send2bucket> on 2024-08-16 18:48:15.640733+00:00
+[2024-08-16T18:48:38.591+0000] {standard_task_runner.py:60} INFO - Started process 2101 to run task
+[2024-08-16T18:48:38.597+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'new_data_management', 'send2bucket', 'manual__2024-08-16T18:48:15.640733+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/new_data_management.py', '--cfg-path', '/tmp/tmpxgl7ujnl']
+[2024-08-16T18:48:38.599+0000] {standard_task_runner.py:88} INFO - Job 24: Subtask send2bucket
+[2024-08-16T18:48:38.619+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T18:48:38.666+0000] {task_command.py:423} INFO - Running <TaskInstance: new_data_management.send2bucket manual__2024-08-16T18:48:15.640733+00:00 [running]> on host f23221e116fc
+[2024-08-16T18:48:38.802+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='new_data_management' AIRFLOW_CTX_TASK_ID='send2bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T18:48:15.640733+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T18:48:15.640733+00:00'
+[2024-08-16T18:48:38.833+0000] {logging_mixin.py:188} INFO - retrain: True
+[2024-08-16T18:48:38.834+0000] {new_data_management.py:117} INFO - retrain value from task 4 : True
+[2024-08-16T18:48:38.834+0000] {new_data_management.py:119} INFO - sent to bucket my-karma-bucket
+[2024-08-16T18:48:38.835+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/new_data_management.py", line 130, in send2bucket
+    s3_hook = S3Hook(aws_conn_id='aws_default')
+NameError: name 'S3Hook' is not defined
+[2024-08-16T18:48:38.875+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=new_data_management, task_id=send2bucket, execution_date=20240816T184815, start_date=20240816T184838, end_date=20240816T184838
+[2024-08-16T18:48:38.916+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 24 for task send2bucket (name 'S3Hook' is not defined; 2101)
+[2024-08-16T18:48:38.930+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-16T18:48:38.964+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,22 @@
+[2024-08-16T18:41:14.579+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: new_data_management.compare_data2threshold manual__2024-08-16T18:41:03.898738+00:00 [queued]>
+[2024-08-16T18:41:14.601+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: new_data_management.compare_data2threshold manual__2024-08-16T18:41:03.898738+00:00 [queued]>
+[2024-08-16T18:41:14.602+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T18:41:14.647+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): compare_data2threshold> on 2024-08-16 18:41:03.898738+00:00
+[2024-08-16T18:41:14.654+0000] {standard_task_runner.py:60} INFO - Started process 1854 to run task
+[2024-08-16T18:41:14.666+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'new_data_management', 'compare_data2threshold', 'manual__2024-08-16T18:41:03.898738+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/new_data_management.py', '--cfg-path', '/tmp/tmprf29205n']
+[2024-08-16T18:41:14.670+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask compare_data2threshold
+[2024-08-16T18:41:14.710+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T18:41:14.791+0000] {task_command.py:423} INFO - Running <TaskInstance: new_data_management.compare_data2threshold manual__2024-08-16T18:41:03.898738+00:00 [running]> on host f23221e116fc
+[2024-08-16T18:41:14.978+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='new_data_management' AIRFLOW_CTX_TASK_ID='compare_data2threshold' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T18:41:03.898738+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T18:41:03.898738+00:00'
+[2024-08-16T18:41:14.981+0000] {new_data_management.py:36} INFO - unit_threshold : 200
+[2024-08-16T18:41:14.982+0000] {new_data_management.py:37} INFO - global_threshold : 2000
+[2024-08-16T18:41:15.070+0000] {new_data_management.py:54} INFO - Total des counts : 2160
+[2024-08-16T18:41:15.071+0000] {new_data_management.py:58} INFO - Le total 2160 dépasse le seuil global 2000
+[2024-08-16T18:41:15.085+0000] {new_data_management.py:65} INFO - Au moins une ligne est au-dessus de unit_threshold
+[2024-08-16T18:41:15.085+0000] {new_data_management.py:70} INFO - Nous devons reentrainer le model avec les nouvelles data
+[2024-08-16T18:41:15.159+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-08-16T18:41:15.209+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=new_data_management, task_id=compare_data2threshold, execution_date=20240816T184103, start_date=20240816T184114, end_date=20240816T184115
+[2024-08-16T18:41:15.255+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-16T18:41:15.340+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

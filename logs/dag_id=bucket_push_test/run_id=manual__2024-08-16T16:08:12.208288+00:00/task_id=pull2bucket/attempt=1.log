@@ -1,0 +1,34 @@
+[2024-08-16T16:08:17.478+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bucket_push_test.pull2bucket manual__2024-08-16T16:08:12.208288+00:00 [queued]>
+[2024-08-16T16:08:17.509+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bucket_push_test.pull2bucket manual__2024-08-16T16:08:12.208288+00:00 [queued]>
+[2024-08-16T16:08:17.510+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T16:08:17.551+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): pull2bucket> on 2024-08-16 16:08:12.208288+00:00
+[2024-08-16T16:08:17.566+0000] {standard_task_runner.py:60} INFO - Started process 17386 to run task
+[2024-08-16T16:08:17.582+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'bucket_push_test', 'pull2bucket', 'manual__2024-08-16T16:08:12.208288+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/bucket_push_test.py', '--cfg-path', '/tmp/tmpfpoz1p70']
+[2024-08-16T16:08:17.584+0000] {standard_task_runner.py:88} INFO - Job 28: Subtask pull2bucket
+[2024-08-16T16:08:17.648+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T16:08:17.747+0000] {task_command.py:423} INFO - Running <TaskInstance: bucket_push_test.pull2bucket manual__2024-08-16T16:08:12.208288+00:00 [running]> on host 282fa7a8e0f3
+[2024-08-16T16:08:18.459+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bucket_push_test' AIRFLOW_CTX_TASK_ID='pull2bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T16:08:12.208288+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T16:08:12.208288+00:00'
+[2024-08-16T16:08:18.462+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/bucket_push_test.py", line 35, in pull2bucket
+    s3.upload_file(file_path, bucket_name, s3_key)
+NameError: name 's3' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/bucket_push_test.py", line 39, in pull2bucket
+    except NoCredentialsError:
+NameError: name 'NoCredentialsError' is not defined
+[2024-08-16T16:08:18.558+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=bucket_push_test, task_id=pull2bucket, execution_date=20240816T160812, start_date=20240816T160817, end_date=20240816T160818
+[2024-08-16T16:08:18.605+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 28 for task pull2bucket (name 'NoCredentialsError' is not defined; 17386)
+[2024-08-16T16:08:18.668+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-16T16:08:18.783+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

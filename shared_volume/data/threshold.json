@@ -1,0 +1,6 @@
+[
+    {
+        "unit_threshold" : 200,
+        "global_threshold" : 2000
+    }
+]

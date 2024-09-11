@@ -1,0 +1,27 @@
+[2024-08-13T16:11:31.374+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_new_data.create_new_data_task manual__2024-08-13T16:11:20.209285+00:00 [queued]>
+[2024-08-13T16:11:31.391+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_new_data.create_new_data_task manual__2024-08-13T16:11:20.209285+00:00 [queued]>
+[2024-08-13T16:11:31.391+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-13T16:11:31.419+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_new_data_task> on 2024-08-13 16:11:20.209285+00:00
+[2024-08-13T16:11:31.427+0000] {standard_task_runner.py:60} INFO - Started process 809 to run task
+[2024-08-13T16:11:31.433+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'create_new_data', 'create_new_data_task', 'manual__2024-08-13T16:11:20.209285+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/create_new_data.py', '--cfg-path', '/tmp/tmplw9xij8i']
+[2024-08-13T16:11:31.436+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask create_new_data_task
+[2024-08-13T16:11:31.461+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T16:11:31.530+0000] {task_command.py:423} INFO - Running <TaskInstance: create_new_data.create_new_data_task manual__2024-08-13T16:11:20.209285+00:00 [running]> on host 3be304d8e560
+[2024-08-13T16:11:31.716+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_new_data' AIRFLOW_CTX_TASK_ID='create_new_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-08-13T16:11:20.209285+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-13T16:11:20.209285+00:00'
+[2024-08-13T16:11:31.718+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/create_new_data.py", line 34, in create_new_data
+    sample_size = np.random.randint(50, 500)
+NameError: name 'np' is not defined
+[2024-08-13T16:11:31.733+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=create_new_data, task_id=create_new_data_task, execution_date=20240813T161120, start_date=20240813T161131, end_date=20240813T161131
+[2024-08-13T16:11:31.755+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 5 for task create_new_data_task (name 'np' is not defined; 809)
+[2024-08-13T16:11:31.810+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-13T16:11:31.842+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

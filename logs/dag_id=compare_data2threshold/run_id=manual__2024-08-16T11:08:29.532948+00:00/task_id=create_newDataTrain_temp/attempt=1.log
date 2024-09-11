@@ -1,0 +1,19 @@
+[2024-08-16T11:08:40.852+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compare_data2threshold.create_newDataTrain_temp manual__2024-08-16T11:08:29.532948+00:00 [queued]>
+[2024-08-16T11:08:40.869+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compare_data2threshold.create_newDataTrain_temp manual__2024-08-16T11:08:29.532948+00:00 [queued]>
+[2024-08-16T11:08:40.870+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-08-16T11:08:40.925+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_newDataTrain_temp> on 2024-08-16 11:08:29.532948+00:00
+[2024-08-16T11:08:40.937+0000] {standard_task_runner.py:60} INFO - Started process 7911 to run task
+[2024-08-16T11:08:40.944+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'compare_data2threshold', 'create_newDataTrain_temp', 'manual__2024-08-16T11:08:29.532948+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/compare_data2threshold.py', '--cfg-path', '/tmp/tmpr903xgx4']
+[2024-08-16T11:08:40.946+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask create_newDataTrain_temp
+[2024-08-16T11:08:41.017+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-16T11:08:41.104+0000] {task_command.py:423} INFO - Running <TaskInstance: compare_data2threshold.create_newDataTrain_temp manual__2024-08-16T11:08:29.532948+00:00 [running]> on host 282fa7a8e0f3
+[2024-08-16T11:08:41.324+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compare_data2threshold' AIRFLOW_CTX_TASK_ID='create_newDataTrain_temp' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T11:08:29.532948+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T11:08:29.532948+00:00'
+[2024-08-16T11:08:41.359+0000] {logging_mixin.py:188} INFO - retrain: True
+[2024-08-16T11:08:41.360+0000] {compare_data2threshold.py:85} INFO - retrain value from task 3 : True
+[2024-08-16T11:08:45.782+0000] {compare_data2threshold.py:105} INFO - X_train, y_train ready to be sent and retrain model
+[2024-08-16T11:08:45.797+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-08-16T11:08:45.979+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=compare_data2threshold, task_id=create_newDataTrain_temp, execution_date=20240816T110829, start_date=20240816T110840, end_date=20240816T110845
+[2024-08-16T11:08:46.255+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-16T11:08:46.384+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

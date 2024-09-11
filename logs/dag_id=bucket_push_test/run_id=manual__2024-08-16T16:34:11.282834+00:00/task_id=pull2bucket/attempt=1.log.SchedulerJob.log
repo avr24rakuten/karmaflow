@@ -1,0 +1,1 @@
+[2024-08-16T16:34:16.904+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: bucket_push_test.pull2bucket manual__2024-08-16T16:34:11.282834+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

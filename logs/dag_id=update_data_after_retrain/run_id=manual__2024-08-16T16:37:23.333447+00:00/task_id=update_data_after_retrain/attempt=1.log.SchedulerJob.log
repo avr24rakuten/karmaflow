@@ -1,0 +1,1 @@
+[2024-08-16T16:37:24.173+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: update_data_after_retrain.update_data_after_retrain manual__2024-08-16T16:37:23.333447+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
